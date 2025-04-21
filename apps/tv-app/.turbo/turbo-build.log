@@ -1,0 +1,20 @@
+
+> @safeview/tv-app@0.0.1 build C:\SafeViewAI\apps\tv-app
+> pnpm run build:renderer && pnpm run build:main && pnpm run build:preload
+
+
+> @safeview/tv-app@0.0.1 build:renderer C:\SafeViewAI\apps\tv-app
+> vite build
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[36mvite v5.4.17 [32mbuilding for production...[36m[39m
+[32m✓[39m 0 modules transformed.
+[31mx[39m Build failed in 156ms
+[31merror during build:
+[31mCould not resolve entry module "index.html".[31m
+    at getRollupError (file:///C:/SafeViewAI/node_modules/.pnpm/rollup@4.39.0/node_modules/rollup/dist/es/shared/parseAst.js:397:41)
+    at error (file:///C:/SafeViewAI/node_modules/.pnpm/rollup@4.39.0/node_modules/rollup/dist/es/shared/parseAst.js:393:42)
+    at ModuleLoader.loadEntryModule (file:///C:/SafeViewAI/node_modules/.pnpm/rollup@4.39.0/node_modules/rollup/dist/es/shared/node-entry.js:21310:20)
+    at async Promise.all (index 0)[39m
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

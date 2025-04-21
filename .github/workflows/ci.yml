@@ -1,0 +1,107 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        
+    - name: Install PNPM
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8.15.4
+        
+    - name: Get pnpm store directory
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+    - uses: actions/cache@v3
+      name: Setup pnpm cache
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Run linting
+      run: pnpm run lint
+
+    - name: Run tests
+      run: pnpm run test
+
+    - name: Upload coverage reports
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+
+  build:
+    needs: test
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        
+    - name: Install PNPM
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8.15.4
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Build TV App
+      run: |
+        cd apps/tv-app
+        pnpm run build
+
+    - name: Build Mobile Remote App
+      run: |
+        cd apps/mobile-remote
+        pnpm run build
+
+    - name: Build Backend
+      run: |
+        cd apps/backend
+        pnpm run build
+
+    - name: Upload TV App artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: tv-app-${{ matrix.os }}
+        path: apps/tv-app/dist/
+
+    - name: Upload Mobile App artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: mobile-remote-${{ matrix.os }}
+        path: apps/mobile-remote/dist/ 

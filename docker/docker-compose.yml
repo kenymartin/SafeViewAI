@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/backend.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../apps/backend:/app
+      - ../libs/shared:/app/libs/shared
+      - temp_data:/app/temp
+      - preferences_data:/app/data
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  temp_data:
+  preferences_data:
+  redis_data: 

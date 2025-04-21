@@ -1,0 +1,9 @@
+{
+  "violence": true,
+  "nudity": true,
+  "profanity": true,
+  "gore": true,
+  "drugs": true,
+  "defaultAction": "blur",
+  "sensitivity": "medium"
+}

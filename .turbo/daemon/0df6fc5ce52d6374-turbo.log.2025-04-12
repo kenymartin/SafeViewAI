@@ -1,0 +1,903 @@
+2025-04-12T00:35:05.347132Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\1.cookie"), AnchoredSystemPathBuf(".turbo\\cookies\\.turbo-cookie"), AnchoredSystemPathBuf(".turbo\\cookies"), AnchoredSystemPathBuf(".turbo\\daemon")}
+2025-04-12T00:35:05.347570Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:35:05.558624Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-12T00:35:07.341515Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo")}
+2025-04-12T00:35:07.341554Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:35:08.756066Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T00:35:08.756091Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:35:23.741905Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T00:35:23.741931Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T00:36:44.045443Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T00:36:44.045480Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:36:45.152234Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_4832_2be90fff6ce35334f19ad159fbab9c96")}
+2025-04-12T00:36:45.152269Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:36:45.259233Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_4832_2be90fff6ce35334f19ad159fbab9c96")}
+2025-04-12T00:36:45.259292Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:36:46.482752Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T00:36:46.482829Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:37:20.498757Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T00:37:20.499433Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T00:37:21.177168Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T00:38:17.853816Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T00:38:17.853918Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T00:38:18.359393Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T00:38:18.359462Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T00:38:18.590692Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T00:41:44.048417Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T00:41:44.048458Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T00:41:44.142882Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T00:41:44.143094Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:16:32.753733Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:16:32.753767Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:16:36.341046Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:16:36.341077Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:16:36.451431Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:16:36.451461Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:20:51.846371Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T01:20:51.846407Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:20:52.553394Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:20:52.553420Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:20:52.553752Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:21:21.543003Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:21:21.543061Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:21:22.447727Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:21:22.447782Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:22:12.053063Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:22:12.053289Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:22:12.552141Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:22:12.552326Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:22:12.829682Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:22:22.180987Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\start.ps1")}
+2025-04-12T01:22:22.181019Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:22:23.011746Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\start.ps1")}
+2025-04-12T01:22:23.011771Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:22:23.012302Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:22:23.846359Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\start.ps1")}
+2025-04-12T01:22:23.846391Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:22:24.184213Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:22:33.748210Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_21360_ca1994339c829645baf8e3852d106fe3")}
+2025-04-12T01:22:33.748299Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:22:33.841407Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_21360_ca1994339c829645baf8e3852d106fe3"), AnchoredSystemPathBuf("")}
+2025-04-12T01:22:33.841478Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:22:33.950755Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("")}
+2025-04-12T01:22:33.950795Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({}))
+2025-04-12T01:22:51.744525Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T01:22:51.744639Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:22:52.101510Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:22:52.101543Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:22:52.102081Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:24:21.147751Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\2.cookie")}
+2025-04-12T01:24:21.147833Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:24:21.762509Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies")}
+2025-04-12T01:24:21.762533Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:24:31.546103Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T01:24:31.546131Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:24:31.796809Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:24:31.797061Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T01:24:31.797080Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:24:31.797434Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:24:54.450297Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T01:24:54.450380Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:24:54.708497Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:25:31.341272Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_10568_3a0cc70b85dfa2be2c18a75b69062bab")}
+2025-04-12T01:25:31.341413Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:25:31.443765Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_10568_3a0cc70b85dfa2be2c18a75b69062bab"), AnchoredSystemPathBuf("")}
+2025-04-12T01:25:31.443790Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:26:21.564032Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:26:21.564068Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:26:22.543475Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:26:22.543547Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:26:37.975804Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.3832425430")}
+2025-04-12T01:26:37.975830Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:26:38.060411Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.3832425430"), AnchoredSystemPathBuf("")}
+2025-04-12T01:26:38.060430Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:26:38.161038Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("pnpm-lock.yaml.3832425430")}
+2025-04-12T01:26:38.161069Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:26:39.903491Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\package.json.394195626"), AnchoredSystemPathBuf("apps\\tv-app")}
+2025-04-12T01:26:39.903575Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:26:41.879807Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\package.json"), AnchoredSystemPathBuf("apps\\tv-app"), AnchoredSystemPathBuf("apps\\tv-app\\package.json.394195626")}
+2025-04-12T01:26:41.879839Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:26:41.880484Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:26:57.542142Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:26:57.542170Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:26:57.751126Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:26:57.751156Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:26:57.751539Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:26:58.051172Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:26:58.051196Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:26:58.476916Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:26:58.476945Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:26:58.477623Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:27:06.550700Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:27:06.550727Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:27:07.050642Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:27:07.050672Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:27:27.544060Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T01:27:27.544092Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:27:28.094453Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:27:28.094937Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:27:28.094954Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:27:28.095588Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:27:42.345208Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T01:27:42.345234Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:27:42.766634Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:31:21.547942Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:31:21.548072Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:31:22.451730Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:31:22.451753Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:36:21.555241Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:36:21.555352Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:36:22.346550Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:36:22.346609Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:37:00.148835Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:37:00.148914Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:37:02.861971Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:37:02.862001Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:37:02.862476Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:37:26.648948Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T01:37:26.648978Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:37:26.959340Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:37:26.959711Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T01:37:26.959726Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:37:26.960355Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:37:42.641816Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:37:42.641892Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:37:43.055192Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:38:21.943572Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:38:21.943650Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:38:22.453791Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:38:22.453864Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:38:22.900904Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:38:22.900929Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:38:22.901526Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:38:35.664567Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_20964_f1a183e65bb430b6f1302b08d502677e")}
+2025-04-12T01:38:35.664595Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:39:32.973610Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("pnpm-lock.yaml.3045324767")}
+2025-04-12T01:39:32.973715Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:39:33.352643Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf("pnpm-lock.yaml.3045324767"), AnchoredSystemPathBuf("")}
+2025-04-12T01:39:33.352672Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:39:47.368864Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:39:47.368960Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:39:48.702227Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:39:48.702258Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:39:48.702878Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:41:21.547271Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:41:21.547306Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:41:21.655363Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:41:21.655387Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:41:22.553449Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:41:22.553481Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:42:52.850148Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:42:52.850235Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:42:53.230453Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:42:53.230878Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T01:42:53.230894Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:42:53.231510Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:43:30.347384Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T01:43:30.347415Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:43:31.281664Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:43:31.283274Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:43:31.283297Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:43:31.284149Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:46:21.551883Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:46:21.551923Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:46:22.346921Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:46:22.346947Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:50:57.045151Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:50:57.045190Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:50:57.484787Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:50:57.484864Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:50:58.285694Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T01:50:58.285722Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:50:58.286365Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:51:03.865980Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:51:03.866043Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:04.611794Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:51:05.259482Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:51:05.259507Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:05.943688Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:51:05.943715Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:06.562238Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:51:06.562265Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:06.562804Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:51:21.563261Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:51:21.563286Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:51:22.455554Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:51:22.455580Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:51:26.462836Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T01:51:26.462870Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:26.745064Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:51:57.745200Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:51:57.745285Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:58.150718Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:51:58.150751Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:58.787117Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:51:58.787176Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:51:58.787674Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:52:17.342834Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:52:17.342857Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:52:17.599039Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:52:34.147441Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T01:52:34.147466Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:52:34.653420Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:52:34.653996Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T01:52:34.654014Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:52:34.654793Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:53:56.243180Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:53:56.243249Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:53:56.853034Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:53:56.853060Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:53:57.791173Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:53:57.791232Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:53:57.791937Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:54:10.057274Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:54:10.057352Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:54:10.523693Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:54:11.744935Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:54:11.745005Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:54:12.646992Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:54:12.647065Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:54:12.887562Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:56:00.170536Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:56:00.170573Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:00.837085Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:56:08.395595Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T01:56:08.395630Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:09.313129Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:56:18.055922Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:56:18.056009Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:18.644165Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:56:18.644194Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:18.862865Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:56:18.863154Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:56:18.863178Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:18.863617Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:56:21.546722Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:56:21.546853Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:56:21.642270Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:56:21.642473Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:56:23.250207Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T01:56:23.250242Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T01:56:33.843002Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\ContentOverlay.tsx")}
+2025-04-12T01:56:33.843046Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:34.454567Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\ContentOverlay.tsx")}
+2025-04-12T01:56:34.454598Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:34.590537Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:56:46.158352Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:56:46.158430Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:46.534606Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:56:48.054810Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:56:48.054853Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:48.547771Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T01:56:48.547802Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:56:48.844682Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:57:32.047394Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T01:57:32.047432Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:57:32.510845Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:57:32.511206Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T01:57:32.511235Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:57:32.511636Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:57:56.453969Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T01:57:56.454021Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:57:57.752799Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T01:57:57.753620Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T01:57:57.753673Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T01:57:57.754863Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:01:21.653546Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:01:21.653635Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:01:23.044957Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:01:23.045012Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:03:57.542014Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:03:57.542044Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:03:58.434121Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:03:58.434373Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:03:58.434391Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:03:58.434671Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:04:06.646027Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_21204_678ef2b1cc49fa82b6c5867589193b97"), AnchoredSystemPathBuf("")}
+2025-04-12T02:04:06.646102Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:05:26.057650Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.3351430409")}
+2025-04-12T02:05:26.057680Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:05:26.155773Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf("pnpm-lock.yaml.3351430409")}
+2025-04-12T02:05:26.155794Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:05:36.364797Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:05:36.364885Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:05:45.321052Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:05:45.321133Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:05:45.322228Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:05:47.988966Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:05:47.989036Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:05:49.200121Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:05:49.200152Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:05:49.200792Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:05:57.505153Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:05:57.505190Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:05:58.885209Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:05:59.655587Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:05:59.655624Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:06:03.589006Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T02:06:03.589044Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:06:03.589637Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:06:21.741956Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:06:21.741989Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:06:21.853485Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:06:21.853513Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:06:23.352259Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:06:23.352294Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:08:36.959379Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T02:08:36.959459Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:08:37.888911Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:08:37.889443Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:08:37.889474Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:08:37.890148Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:09:32.252818Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:09:32.252909Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:09:37.164585Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:09:37.164629Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:09:37.165565Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:10:44.210883Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:10:44.210940Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:10:45.160140Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:11:12.247889Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T02:11:12.247939Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:11:13.139714Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:11:13.140298Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:11:13.140320Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:11:13.141187Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:11:21.649259Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:11:21.649300Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:11:23.146966Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:11:23.146996Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:14:39.152768Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T02:14:39.152801Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:14:39.453728Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:14:39.454042Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T02:14:39.454063Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:14:39.454388Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:14:59.447652Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T02:14:59.448866Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:14:59.800021Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:16:21.643016Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:16:21.643099Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:16:21.957754Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:16:21.957847Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:16:23.241520Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:16:23.241551Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:18:30.714403Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:18:30.714448Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:31.995509Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:18:31.995926Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:32.794686Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:18:32.795614Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:18:32.795636Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:32.796127Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:18:33.139465Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:18:33.139509Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:33.784046Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:18:41.594561Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:18:41.594612Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:46.163739Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:18:46.163788Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:46.164601Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:18:48.136781Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T02:18:48.136813Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:50.149377Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:18:50.150294Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:18:50.150322Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:50.151248Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:18:51.013137Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:18:51.013172Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:18:53.266880Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:21:01.817792Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:21:01.817907Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:21:11.372830Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:21:11.372885Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:21:11.373980Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:21:12.616277Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\public\\init.html"), AnchoredSystemPathBuf("apps\\tv-app\\public")}
+2025-04-12T02:21:12.616356Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:21:14.652858Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:21:14.652903Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:21:16.675752Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:21:17.684257Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\public\\init.html")}
+2025-04-12T02:21:17.684305Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:21:30.062043Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\public\\init.html")}
+2025-04-12T02:21:30.062088Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:21:30.063283Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:21:32.766584Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:21:32.766671Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:21:40.313989Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:21:40.314063Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:21:57.849355Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:21:57.849537Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:22:06.775593Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:22:06.775633Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:22:06.776892Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:22:14.439839Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\vite.config.ts")}
+2025-04-12T02:22:14.439878Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:22:48.533621Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:22:48.533718Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:23:02.156808Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:23:02.156955Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:23:02.158398Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:23:23.020058Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:23:23.020094Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:23:25.078718Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:24:29.683934Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T02:24:29.683984Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:24:33.276821Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:24:33.277480Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T02:24:33.278011Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:24:33.278787Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:25:11.753860Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T02:25:11.753905Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:25:13.098197Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:25:13.099597Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T02:25:13.099630Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:25:13.104752Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:26:27.056244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:26:27.056290Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:26:28.770435Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:26:28.770506Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:26:35.935487Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:26:35.935913Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:27:32.163057Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:27:32.163093Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:28:09.633582Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:28:09.633631Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:28:09.634345Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:29:24.734140Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T02:29:24.734187Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:29:27.098292Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:29:27.098864Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T02:29:27.098883Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:29:27.099633Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:30:13.944312Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T02:30:13.944452Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:30:16.377197Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:30:16.377706Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T02:30:16.377772Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:30:16.378848Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:31:23.861990Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:31:23.862038Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:31:24.017103Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:31:24.017160Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:31:25.647864Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:31:25.647923Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:33:48.843425Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T02:33:48.843548Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:33:59.923799Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T02:33:59.923849Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:33:59.924937Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:34:00.573861Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T02:34:00.573943Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:34:05.474126Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:34:05.479208Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T02:34:05.479238Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:34:05.577512Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:34:15.312521Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:34:15.312552Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:34:22.285227Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T02:34:22.285263Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T02:34:22.286149Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T02:36:23.251063Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:36:23.251151Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:36:25.044549Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:36:25.044633Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:41:23.252174Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:41:23.252323Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:41:23.954972Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:41:23.955009Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:52:25.544977Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:52:25.545814Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:52:26.489454Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:52:26.489607Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:57:25.354292Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:57:25.354327Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T02:57:26.146197Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T02:57:26.146233Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:01:13.554750Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T03:01:13.554786Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:01:41.633119Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T03:01:41.633163Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:01:41.858298Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:01:43.858866Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T03:01:43.858937Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:01:46.297783Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:01:46.298146Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T03:01:46.298159Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:01:46.298625Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:01:50.749656Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T03:01:50.749717Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:01:52.803401Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:01:52.803862Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T03:01:52.803877Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:01:52.805228Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:02:25.346562Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:02:25.346625Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:02:26.246649Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:02:26.246678Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:07:25.563858Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:07:25.564016Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:07:26.247389Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:07:26.247417Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:07:53.766028Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T03:07:53.766118Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:07:59.912982Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T03:07:59.913009Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:07:59.913546Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:08:07.456651Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T03:08:07.456739Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:08:08.115755Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\VideoPlayer.tsx")}
+2025-04-12T03:08:08.115825Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:08:08.447672Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:10:52.658476Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T03:10:52.658519Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:10:59.989958Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:10:59.991182Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T03:10:59.991197Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:10:59.992990Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:11:27.650143Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T03:11:27.650171Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:11:28.590642Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:11:28.591071Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T03:11:28.591086Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T03:11:28.591661Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T03:12:25.759034Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:12:25.759063Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:12:25.861053Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:12:25.861081Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:12:27.559475Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:12:27.559539Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:17:25.455779Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:17:25.455850Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:17:25.551959Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:17:25.552068Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:17:26.448143Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:17:26.448179Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:22:25.447602Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:22:25.447644Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:22:25.541475Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:22:25.541553Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:22:26.853376Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:22:26.853405Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:27:25.453073Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:27:25.453127Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:27:26.244515Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:27:26.244539Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:32:25.446242Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:32:25.446305Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:32:25.541231Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:32:25.541257Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T03:32:26.247465Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T03:32:26.247494Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:01:53.965797Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\1.cookie"), AnchoredSystemPathBuf(".turbo\\cookies"), AnchoredSystemPathBuf(".turbo\\cookies\\.turbo-cookie")}
+2025-04-12T21:01:53.985829Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:01:54.019297Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-12T21:01:54.261302Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo")}
+2025-04-12T21:01:54.261382Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:01:54.728078Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:01:54.728110Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:02:06.327751Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T21:02:06.327789Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:02:06.903548Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T21:02:06.903579Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:02:06.904141Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:02:31.248547Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T21:02:31.248583Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:02:33.610403Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:02:33.611148Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T21:02:33.611175Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:02:33.612200Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:05:22.840250Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\2.cookie")}
+2025-04-12T21:05:22.840574Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:05:23.238582Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies")}
+2025-04-12T21:05:23.238615Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:05:30.036722Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:05:30.036745Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:05:31.036903Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:05:31.036978Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:05:35.525739Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js")}
+2025-04-12T21:05:35.525770Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:05:35.983336Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:05:35.983753Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map")}
+2025-04-12T21:05:35.983779Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:05:35.984435Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:05:57.632705Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T21:05:57.632747Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:05:58.240948Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:05:58.241437Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T21:05:58.241463Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:05:58.242598Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:10:30.050635Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:10:30.050923Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:10:30.134177Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:10:30.134240Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:10:30.933670Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:10:30.933697Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:15:31.844406Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:15:31.844525Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:15:32.441381Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:15:32.441432Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:15:42.237869Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:15:42.237941Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:35:50.210675Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:35:50.212536Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:40:44.435895Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:40:44.438753Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:40:44.539285Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:40:44.539547Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:40:45.338940Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:40:45.338977Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:45:44.538125Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:45:44.538181Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:45:45.345711Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:45:45.346805Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:50:44.434168Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:50:44.434331Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:50:44.529718Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:50:44.529745Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:50:45.240385Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:50:45.240632Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:53:24.568184Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T21:53:24.568245Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:53:37.763788Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T21:53:37.763823Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:53:38.115548Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:53:39.846324Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T21:53:39.846389Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:53:45.535986Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T21:53:45.536437Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T21:53:45.803400Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T21:55:44.431070Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:55:44.431114Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T21:55:45.428256Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T21:55:45.428427Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:00:44.539770Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:00:44.539816Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:00:45.336244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:00:45.336284Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:00:47.266544Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:00:47.266579Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:00:58.838697Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:00:58.838726Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:00:59.078116Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:01:07.443647Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\3.cookie")}
+2025-04-12T22:01:07.443713Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:01:07.940486Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies")}
+2025-04-12T22:01:07.940552Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:01:20.938563Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T22:01:20.938661Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:01:39.538549Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js")}
+2025-04-12T22:01:39.538589Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:01:39.922115Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:01:39.922471Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map")}
+2025-04-12T22:01:39.922484Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:01:39.922964Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:05:54.933874Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:05:54.933982Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:05:55.097739Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:05:55.097765Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:05:56.728470Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:05:56.728842Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:06:10.371372Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:06:10.371471Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:06:18.633402Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\initialization.html")}
+2025-04-12T22:06:18.633441Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:06:18.988325Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\initialization.html"), AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer")}
+2025-04-12T22:06:18.988361Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:06:18.989251Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:06:24.056775Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\initialization.html")}
+2025-04-12T22:06:24.056848Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:10:46.740976Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:10:46.741015Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:10:47.937962Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:10:47.937990Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:15:46.725611Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:15:46.725654Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:15:46.834979Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:15:46.835015Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:15:47.535826Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:15:47.535869Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:20:46.726681Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:20:46.726778Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:20:46.835681Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:20:46.835734Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:20:47.540144Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:20:47.540197Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:29:35.584328Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:29:35.584421Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:29:36.434100Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:29:36.434122Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:34:31.838338Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:34:31.838460Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:34:32.526363Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:34:32.526388Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:36:45.437536Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming"), AnchoredSystemPathBuf("apps\\tv-app\\src\\services"), AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\types.ts")}
+2025-04-12T22:36:45.437573Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:36:48.721232Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src"), AnchoredSystemPathBuf("apps\\tv-app\\src\\services"), AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming")}
+2025-04-12T22:36:48.721276Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:36:48.722101Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:36:48.831854Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\types.ts")}
+2025-04-12T22:36:48.831909Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:36:49.189549Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\types.ts")}
+2025-04-12T22:36:49.189576Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:36:49.189924Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:36:58.076028Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\netflix.ts")}
+2025-04-12T22:36:58.076056Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:36:58.723511Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming")}
+2025-04-12T22:36:58.723538Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:36:58.724396Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:37:01.139919Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\netflix.ts")}
+2025-04-12T22:37:01.139952Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:01.559909Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\netflix.ts")}
+2025-04-12T22:37:01.559966Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:01.560598Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:37:08.234069Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\manager.ts")}
+2025-04-12T22:37:08.234096Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:08.659781Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming")}
+2025-04-12T22:37:08.659818Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:08.660351Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:37:10.726757Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\manager.ts")}
+2025-04-12T22:37:10.726781Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:11.236591Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\manager.ts")}
+2025-04-12T22:37:11.236625Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:11.237267Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:37:39.445691Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:37:39.445757Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:39.719929Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:37:42.080377Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:37:42.080442Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:59.030914Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:37:59.030972Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:37:59.324823Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:38:00.552605Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:38:00.552638Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:38:05.035373Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:38:05.035395Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:38:05.270665Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:38:05.270913Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\main.ts")}
+2025-04-12T22:38:05.270932Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:38:05.271237Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:39:32.042584Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:39:32.042621Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:39:33.335637Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:39:33.335676Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:40:33.929691Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\mock.ts")}
+2025-04-12T22:40:33.929715Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:40:34.295134Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming")}
+2025-04-12T22:40:34.295160Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:40:34.295515Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:40:36.634447Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\mock.ts")}
+2025-04-12T22:40:36.634472Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:40:36.929224Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\mock.ts")}
+2025-04-12T22:40:36.929284Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:40:37.095550Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:40:43.132502Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\manager.ts")}
+2025-04-12T22:40:43.132528Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:40:43.727116Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\services\\streaming\\manager.ts")}
+2025-04-12T22:40:43.727236Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:40:43.869413Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:44:31.839132Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:44:31.839197Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:44:33.130368Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:44:33.130405Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:45:11.338309Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\TestPanel.tsx")}
+2025-04-12T22:45:11.338330Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:45:11.567056Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components")}
+2025-04-12T22:45:11.567081Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:45:11.567389Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:45:14.927569Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\TestPanel.tsx")}
+2025-04-12T22:45:14.927640Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:45:15.240702Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\components\\TestPanel.tsx")}
+2025-04-12T22:45:15.240782Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:45:15.312681Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:45:25.139679Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\App.tsx")}
+2025-04-12T22:45:25.139708Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:45:25.531238Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\App.tsx")}
+2025-04-12T22:45:25.531259Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:45:25.654369Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:49:31.833583Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:49:31.833620Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:49:33.236081Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:49:33.236115Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:51:43.944060Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\4.cookie")}
+2025-04-12T22:51:43.944138Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:51:44.426203Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies")}
+2025-04-12T22:51:44.426230Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:52:03.230702Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\types.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\types.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming")}
+2025-04-12T22:52:03.230732Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:52:04.225859Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\manager.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\manager.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\netflix.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\netflix.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\mock.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\mock.js.map")}
+2025-04-12T22:52:04.225892Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:52:04.226378Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:52:28.744835Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\types.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\netflix.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\types.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\netflix.js")}
+2025-04-12T22:52:28.744878Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:52:29.527170Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:52:29.527654Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\manager.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\mock.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js.map"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\main.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\ipc\\handlers.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\manager.js"), AnchoredSystemPathBuf("apps\\tv-app\\dist\\services\\streaming\\mock.js.map")}
+2025-04-12T22:52:29.527683Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T22:52:29.528202Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T22:54:32.134419Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:54:32.134463Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:54:33.350715Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:54:33.350764Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:59:32.248231Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:59:32.248405Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T22:59:33.365362Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T22:59:33.365426Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:04:31.831011Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:04:31.831107Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:04:31.941920Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:04:31.941950Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:04:32.639874Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:04:32.639916Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:08:24.739971Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\preload.ts")}
+2025-04-12T23:08:24.740057Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T23:08:25.269006Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\preload.ts")}
+2025-04-12T23:08:25.269039Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T23:08:25.270070Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T23:09:28.932393Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\App.tsx")}
+2025-04-12T23:09:28.932431Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T23:09:29.134118Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\src\\renderer\\App.tsx")}
+2025-04-12T23:09:29.134146Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T23:09:29.270494Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T23:09:32.027373Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:09:32.027406Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:09:32.136310Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:09:32.136378Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:09:33.239854Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:09:33.239876Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:09:52.430852Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_30268_51043429c3aa9471f7985d725cfc99c1")}
+2025-04-12T23:09:52.430937Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:14:32.132308Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:14:32.132397Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:14:33.897977Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:14:33.898029Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:14:47.046436Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:14:47.046495Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:14:57.509659Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:14:57.509841Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:15:24.927095Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:15:24.927204Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:15:34.006480Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:15:34.006579Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:05.643101Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:16:05.643420Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:09.432074Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:16:09.432194Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:31.093410Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:16:31.093534Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:34.235263Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.3569950810")}
+2025-04-12T23:16:34.235310Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:34.427008Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.3569950810")}
+2025-04-12T23:16:34.427041Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:34.554225Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.3569950810"), AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf("")}
+2025-04-12T23:16:34.554274Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:36.592307Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app\\package.json.2836124139"), AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:16:36.592416Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:38.069280Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\tv-app"), AnchoredSystemPathBuf("apps\\tv-app\\package.json"), AnchoredSystemPathBuf("apps\\tv-app\\package.json.2836124139")}
+2025-04-12T23:16:38.069351Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@safeview/tv-app"), path: AnchoredSystemPathBuf("apps\\tv-app") }}))
+2025-04-12T23:16:38.070513Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-04-12T23:16:47.666104Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:16:47.666222Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:48.429148Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:16:48.429212Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:16:48.634084Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:16:48.634135Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:19:31.933387Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:19:31.933419Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:19:32.630400Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:19:32.630519Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:24:31.938592Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:24:31.938773Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:24:32.635092Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:24:32.635119Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:30:35.996509Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:30:35.996545Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:30:38.413412Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:30:38.413467Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:35:35.228537Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:35:35.228612Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:35:35.928701Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:35:35.928731Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:40:35.233489Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:40:35.233565Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-04-12T23:40:36.034028Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\0df6fc5ce52d6374-turbo.log.2025-04-12")}
+2025-04-12T23:40:36.034063Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
