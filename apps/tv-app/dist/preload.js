@@ -5,29 +5,49 @@ const electron_1 = require("electron");
 // the ipcRenderer without exposing the entire object
 electron_1.contextBridge.exposeInMainWorld('api', {
     send: (channel, data) => {
-        // whitelist channels
-        const validChannels = ['app-ready', 'toMain'];
+        // Whitelist channels
+        const validChannels = [
+            'app-ready',
+            'apply-filter',
+            'cancel-filter',
+            'video-control'
+        ];
         if (validChannels.includes(channel)) {
             electron_1.ipcRenderer.send(channel, data);
         }
     },
-    receive: (channel, func) => {
-        const validChannels = ['fromMain', 'app-ready-reply'];
+    on: (channel, callback) => {
+        // Whitelist channels
+        const validChannels = [
+            'app-ready-reply',
+            'content-warnings',
+            'video-state'
+        ];
         if (validChannels.includes(channel)) {
-            // Deliberately strip event as it includes `sender` 
-            electron_1.ipcRenderer.on(channel, (event, ...args) => func(...args));
+            // Strip event as it includes `sender`
+            electron_1.ipcRenderer.on(channel, (_event, data) => callback(data));
         }
     },
-    on: (channel, func) => {
-        const validChannels = ['fromMain', 'app-ready-reply'];
-        if (validChannels.includes(channel)) {
-            electron_1.ipcRenderer.on(channel, (event, ...args) => func(...args));
-        }
-    },
-    removeAllListeners: (channel) => {
-        const validChannels = ['fromMain', 'app-ready-reply'];
+    removeListener: (channel) => {
+        // Whitelist channels
+        const validChannels = [
+            'app-ready-reply',
+            'content-warnings',
+            'video-state'
+        ];
         if (validChannels.includes(channel)) {
             electron_1.ipcRenderer.removeAllListeners(channel);
+        }
+    },
+    invoke: async (channel, data) => {
+        // Whitelist channels
+        const validChannels = [
+            'get-content-warnings',
+            'apply-filter',
+            'video-control'
+        ];
+        if (validChannels.includes(channel)) {
+            return await electron_1.ipcRenderer.invoke(channel, data);
         }
     }
 });

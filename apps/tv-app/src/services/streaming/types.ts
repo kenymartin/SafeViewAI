@@ -13,6 +13,12 @@ export interface VideoMetadata {
   aspectRatio: string;
 }
 
+export interface ContentWarning {
+  type: string;
+  confidence: number;
+  description: string;
+}
+
 export interface StreamingService {
   name: string;
   initialize(): Promise<void>;
@@ -22,5 +28,6 @@ export interface StreamingService {
   enterFullscreen(): Promise<void>;
   exitFullscreen(): Promise<void>;
   isFullscreen(): Promise<boolean>;
+  getContentWarnings(): Promise<ContentWarning[]>;
   cleanup?(): Promise<void>;
 } 

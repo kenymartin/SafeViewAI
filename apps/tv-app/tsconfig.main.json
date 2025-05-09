@@ -10,8 +10,9 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "noEmit": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"]
   },
-  "include": ["src/main.ts", "src/ipc/**/*"],
+  "include": ["src/main.ts", "src/ipc/**/*", "src/services/**/*", "src/types/**/*"],
   "exclude": ["node_modules"]
 } 

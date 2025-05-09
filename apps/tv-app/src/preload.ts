@@ -13,36 +13,54 @@ interface UserPreferences {
 
 // Expose protected methods that allow the renderer process to use
 // the ipcRenderer without exposing the entire object
-contextBridge.exposeInMainWorld(
-  'api', {
-    send: (channel: string, data: any) => {
-      // whitelist channels
-      const validChannels = ['app-ready', 'toMain'];
-      if (validChannels.includes(channel)) {
-        ipcRenderer.send(channel, data);
-      }
-    },
-    receive: (channel: string, func: Function) => {
-      const validChannels = ['fromMain', 'app-ready-reply'];
-      if (validChannels.includes(channel)) {
-        // Deliberately strip event as it includes `sender` 
-        ipcRenderer.on(channel, (event, ...args) => func(...args));
-      }
-    },
-    on: (channel: string, func: Function) => {
-      const validChannels = ['fromMain', 'app-ready-reply'];
-      if (validChannels.includes(channel)) {
-        ipcRenderer.on(channel, (event, ...args) => func(...args));
-      }
-    },
-    removeAllListeners: (channel: string) => {
-      const validChannels = ['fromMain', 'app-ready-reply'];
-      if (validChannels.includes(channel)) {
-        ipcRenderer.removeAllListeners(channel);
-      }
+contextBridge.exposeInMainWorld('api', {
+  send: (channel: string, data: any) => {
+    // Whitelist channels
+    const validChannels = [
+      'app-ready',
+      'apply-filter',
+      'cancel-filter',
+      'video-control'
+    ];
+    if (validChannels.includes(channel)) {
+      ipcRenderer.send(channel, data);
+    }
+  },
+  on: (channel: string, callback: (data: any) => void) => {
+    // Whitelist channels
+    const validChannels = [
+      'app-ready-reply',
+      'content-warnings',
+      'video-state'
+    ];
+    if (validChannels.includes(channel)) {
+      // Strip event as it includes `sender`
+      ipcRenderer.on(channel, (_event, data) => callback(data));
+    }
+  },
+  removeListener: (channel: string) => {
+    // Whitelist channels
+    const validChannels = [
+      'app-ready-reply',
+      'content-warnings',
+      'video-state'
+    ];
+    if (validChannels.includes(channel)) {
+      ipcRenderer.removeAllListeners(channel);
+    }
+  },
+  invoke: async (channel: string, data: any) => {
+    // Whitelist channels
+    const validChannels = [
+      'get-content-warnings',
+      'apply-filter',
+      'video-control'
+    ];
+    if (validChannels.includes(channel)) {
+      return await ipcRenderer.invoke(channel, data);
     }
   }
-);
+});
 
 // Disable autofill when the window loads
 window.addEventListener('DOMContentLoaded', () => {

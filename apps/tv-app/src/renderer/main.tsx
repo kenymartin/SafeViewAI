@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ConfigProvider } from 'antd';
-import App from './App';
+import { App } from './App';
 import './styles.css';
+
+// Import preload script types
+declare global {
+  interface Window {
+    api: {
+      send: (channel: string, data?: any) => void;
+      on: (channel: string, callback: (data: any) => void) => void;
+    };
+  }
+}
 
 // Initialize the root element
 const rootElement = document.getElementById('root');

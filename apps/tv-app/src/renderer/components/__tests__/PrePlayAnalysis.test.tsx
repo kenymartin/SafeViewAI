@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent, act } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 import PrePlayAnalysis, { ContentWarning } from '../PrePlayAnalysis';
@@ -78,10 +78,14 @@ describe('PrePlayAnalysis', () => {
       const label = warning.type.charAt(0).toUpperCase() + warning.type.slice(1);
       const checkbox = screen.getByRole('checkbox', { name: new RegExp(label, 'i') }) as HTMLInputElement;
       
-      await user.click(checkbox);
+      await act(async () => {
+        await user.click(checkbox);
+      });
       expect(checkbox.checked).toBe(true);
       
-      await user.click(checkbox);
+      await act(async () => {
+        await user.click(checkbox);
+      });
       expect(checkbox.checked).toBe(false);
     }
   });
@@ -96,11 +100,15 @@ describe('PrePlayAnalysis', () => {
     );
 
     // Select both filters
-    await user.click(screen.getByRole('checkbox', { name: /violence/i }));
-    await user.click(screen.getByRole('checkbox', { name: /profanity/i }));
+    await act(async () => {
+      await user.click(screen.getByRole('checkbox', { name: /violence/i }));
+      await user.click(screen.getByRole('checkbox', { name: /profanity/i }));
+    });
 
     // Click confirm button
-    await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    await act(async () => {
+      await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    });
 
     expect(mockOnConfirm).toHaveBeenCalledWith(['violence', 'profanity']);
   });
@@ -114,7 +122,9 @@ describe('PrePlayAnalysis', () => {
       />
     );
 
-    await user.click(screen.getByRole('button', { name: /continue without filters/i }));
+    await act(async () => {
+      await user.click(screen.getByRole('button', { name: /continue without filters/i }));
+    });
     expect(mockOnCancel).toHaveBeenCalled();
   });
 
@@ -128,18 +138,30 @@ describe('PrePlayAnalysis', () => {
     );
 
     // Toggle Violence on
-    await user.click(screen.getByRole('checkbox', { name: /violence/i }));
-    await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    await act(async () => {
+      await user.click(screen.getByRole('checkbox', { name: /violence/i }));
+    });
+    await act(async () => {
+      await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    });
     expect(mockOnConfirm).toHaveBeenCalledWith(['violence']);
 
     // Toggle Profanity on
-    await user.click(screen.getByRole('checkbox', { name: /profanity/i }));
-    await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    await act(async () => {
+      await user.click(screen.getByRole('checkbox', { name: /profanity/i }));
+    });
+    await act(async () => {
+      await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    });
     expect(mockOnConfirm).toHaveBeenCalledWith(['violence', 'profanity']);
 
     // Toggle Violence off
-    await user.click(screen.getByRole('checkbox', { name: /violence/i }));
-    await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    await act(async () => {
+      await user.click(screen.getByRole('checkbox', { name: /violence/i }));
+    });
+    await act(async () => {
+      await user.click(screen.getByRole('button', { name: /apply selected filters/i }));
+    });
     expect(mockOnConfirm).toHaveBeenCalledWith(['profanity']);
   });
 

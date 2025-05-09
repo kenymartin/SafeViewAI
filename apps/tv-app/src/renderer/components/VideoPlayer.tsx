@@ -6,6 +6,8 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import { ContentOverlay } from './ContentOverlay';
+import { Card, Space } from 'antd';
+import { PlayCircleOutlined, PauseCircleOutlined } from '@ant-design/icons';
 
 interface VideoStats {
   resolution: string;
@@ -35,6 +37,7 @@ interface VideoPlayerProps {
   onVideoIdentified?: (metadata: VideoMetadata) => void;
   overlayBorderColor?: string;
   overlayBorderWidth?: number;
+  isFiltered: boolean;
 }
 
 export const VideoPlayer: React.FC<VideoPlayerProps> = ({
@@ -43,7 +46,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   onTimeUpdate,
   onVideoIdentified,
   overlayBorderColor = '#00ff00',
-  overlayBorderWidth = 5
+  overlayBorderWidth = 5,
+  isFiltered
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -301,149 +305,83 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     }
   };
 
+  useEffect(() => {
+    // Listen for video control events
+    window.api.on('video-control', (action: string) => {
+      if (!videoRef.current) return;
+
+      switch (action) {
+        case 'play':
+          videoRef.current.play();
+          break;
+        case 'pause':
+          videoRef.current.pause();
+          break;
+        case 'seek':
+          // Handle seeking
+          break;
+      }
+    });
+
+    return () => {
+      window.api.removeListener('video-control');
+    };
+  }, []);
+
+  const handlePlay = () => {
+    window.api.send('video-control', 'play');
+  };
+
+  const handlePause = () => {
+    window.api.send('video-control', 'pause');
+  };
+
   return (
-    <Box
-      ref={containerRef}
-      sx={{
-        position: 'relative',
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        bgcolor: 'black',
-        overflow: 'hidden'
-      }}
+    <Card
+      title="Video Player"
+      extra={
+        <Space>
+          <Text type="secondary">
+            {isFiltered ? 'Content Filtering: ON' : 'Content Filtering: OFF'}
+          </Text>
+        </Space>
+      }
     >
-      <Box
-        sx={{
-          position: 'relative',
-          width: dimensions.width || '100%',
-          height: dimensions.height || '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          transition: 'all 0.3s ease-in-out'
-        }}
-      >
+      <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
         <video
           ref={videoRef}
-          src={videoSource}
           style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
             width: '100%',
             height: '100%',
-            objectFit: 'contain'
+            backgroundColor: '#000'
           }}
+          controls
         />
-        <ContentOverlay
-          isActive={true}
-          borderColor={overlayBorderColor}
-          borderWidth={overlayBorderWidth}
-        />
-      </Box>
-      
-      {showControls && metadata && (
-        <Box
-          sx={{
+        <div
+          style={{
             position: 'absolute',
-            bottom: 0,
-            left: 0,
-            right: 0,
-            p: 2,
-            background: 'linear-gradient(transparent, rgba(0,0,0,0.85))',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 1,
-            borderTop: `1px solid ${overlayBorderColor}`,
-            boxShadow: `0 -5px 10px ${overlayBorderColor}40`
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 1
           }}
         >
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
-            <Typography variant="body1" sx={{ color: 'white', flexGrow: 1 }}>
-              {metadata.title}
-            </Typography>
-            
-            {metadata.platform && (
-              <Chip
-                label={metadata.platform}
-                size="small"
-                sx={{ 
-                  bgcolor: 'rgba(0, 255, 0, 0.2)',
-                  color: 'white',
-                  borderRadius: 1
-                }}
-              />
-            )}
-            
-            {metadata.isLocal && (
-              <Chip
-                label="Local File"
-                size="small"
-                sx={{ 
-                  bgcolor: 'rgba(0, 255, 0, 0.2)',
-                  color: 'white',
-                  borderRadius: 1
-                }}
-              />
-            )}
-            
-            {metadata.quality && (
-              <Chip
-                label={metadata.quality}
-                size="small"
-                sx={{ 
-                  bgcolor: 'rgba(0, 255, 0, 0.2)',
-                  color: 'white',
-                  borderRadius: 1
-                }}
-              />
-            )}
-
-            {metadata.stats && (
-              <Chip
-                label={`${metadata.stats.fps}FPS`}
-                size="small"
-                sx={{ 
-                  bgcolor: 'rgba(0, 255, 0, 0.2)',
-                  color: 'white',
-                  borderRadius: 1
-                }}
-              />
-            )}
-          </Box>
-          
-          <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
-            <IconButton
-              onClick={togglePlay}
-              sx={{ color: 'white' }}
-            >
-              {isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
-            </IconButton>
-            
-            <IconButton
-              onClick={toggleMute}
-              sx={{ color: 'white' }}
-            >
-              {isMuted ? <VolumeOffIcon /> : <VolumeUpIcon />}
-            </IconButton>
-            
-            <IconButton
-              onClick={toggleFullscreen}
-              sx={{ color: 'white' }}
-            >
-              <FullscreenIcon />
-            </IconButton>
-
-            {metadata.stats && (
-              <Typography variant="caption" sx={{ color: 'white', ml: 'auto' }}>
-                {metadata.stats.resolution} • {metadata.stats.aspectRatio}:1
-              </Typography>
-            )}
-          </Box>
-        </Box>
-      )}
-    </Box>
+          <Space>
+            <PlayCircleOutlined
+              style={{ fontSize: '48px', color: 'white', cursor: 'pointer' }}
+              onClick={handlePlay}
+            />
+            <PauseCircleOutlined
+              style={{ fontSize: '48px', color: 'white', cursor: 'pointer' }}
+              onClick={handlePause}
+            />
+          </Space>
+        </div>
+      </div>
+    </Card>
   );
 };
 

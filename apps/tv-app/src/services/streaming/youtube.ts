@@ -1,4 +1,4 @@
-import { StreamingService, VideoMetadata, StreamingQuality } from './types';
+import { StreamingService, VideoMetadata, StreamingQuality, ContentWarning } from './types';
 import { BrowserWindow, screen } from 'electron';
 import { exec } from 'child_process';
 import { promisify } from 'util';
@@ -7,21 +7,35 @@ const execAsync = promisify(exec);
 
 export class YouTubeService implements StreamingService {
   name = 'youtube';
-  private initialized = false;
-  private mainWindow: BrowserWindow | null = null;
+  private mainWindow: BrowserWindow | null;
+  private isInitialized: boolean = false;
   private youtubeProcessId: number | null = null;
   private checkInterval: NodeJS.Timeout | null = null;
+  private currentVideo: any = null;
 
   constructor(mainWindow: BrowserWindow) {
     this.mainWindow = mainWindow;
   }
 
   async initialize(): Promise<void> {
-    if (this.initialized) return;
-    
-    // Initialize YouTube detection
-    this.setupYouTubeDetection();
-    this.initialized = true;
+    if (this.isInitialized) {
+      console.log('YouTube service already initialized');
+      return;
+    }
+
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    try {
+      console.log('Initializing YouTube service...');
+      await this.mainWindow.loadURL('https://www.youtube.com');
+      this.isInitialized = true;
+      console.log('YouTube service initialized successfully');
+    } catch (error) {
+      console.error('Failed to initialize YouTube service:', error);
+      throw error;
+    }
   }
 
   private setupYouTubeDetection() {
@@ -133,70 +147,190 @@ export class YouTubeService implements StreamingService {
     this.mainWindow.show();
   }
 
-  // Clean up resources when service is no longer needed
-  async cleanup() {
-    if (this.checkInterval) {
-      clearInterval(this.checkInterval);
-      this.checkInterval = null;
-    }
-  }
-
   async playVideo(videoId: string): Promise<void> {
-    if (!this.initialized) {
+    if (!this.isInitialized) {
       throw new Error('YouTube service not initialized');
     }
 
-    console.log(`Playing YouTube video: ${videoId}`);
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    try {
+      await this.mainWindow.loadURL(`https://www.youtube.com/watch?v=${videoId}`);
+      this.currentVideo = {
+        id: videoId,
+        isPlaying: true
+      };
+      console.log('Video playback started:', videoId);
+    } catch (error) {
+      console.error('Failed to play video:', error);
+      throw error;
+    }
   }
 
   async getCurrentVideo(): Promise<VideoMetadata | null> {
-    if (!this.initialized) {
+    if (!this.isInitialized) {
       throw new Error('YouTube service not initialized');
     }
 
-    return {
-      title: 'Sample YouTube Title',
-      platform: 'youtube',
-      quality: {
-        width: 1920,
-        height: 1080,
-        fps: 60,
-        bitrate: 15000000 // 15 Mbps
-      },
-      resolution: '1920x1080',
-      aspectRatio: '16:9'
-    };
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    try {
+      const videoInfo = await this.mainWindow.webContents.executeJavaScript(`
+        (() => {
+          const video = document.querySelector('video');
+          if (!video) return null;
+          
+          return {
+            title: document.title,
+            platform: 'youtube',
+            quality: {
+              width: video.videoWidth,
+              height: video.videoHeight,
+              fps: video.getVideoPlaybackQuality().totalVideoFrames / video.currentTime,
+              bitrate: video.getVideoPlaybackQuality().totalVideoFrames * video.videoWidth * video.videoHeight * 3
+            },
+            resolution: video.videoWidth + 'x' + video.videoHeight,
+            aspectRatio: video.videoWidth / video.videoHeight + ':1',
+            isPlaying: !video.paused,
+            currentTime: video.currentTime,
+            duration: video.duration
+          };
+        })();
+      `);
+
+      return videoInfo || this.currentVideo;
+    } catch (error) {
+      console.error('Failed to get current video info:', error);
+      return this.currentVideo;
+    }
   }
 
   async setQuality(quality: StreamingQuality): Promise<void> {
-    if (!this.initialized) {
+    if (!this.isInitialized) {
       throw new Error('YouTube service not initialized');
     }
 
-    console.log('Setting YouTube quality:', quality);
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    try {
+      await this.mainWindow.webContents.executeJavaScript(`
+        (() => {
+          const video = document.querySelector('video');
+          if (!video) return;
+          
+          // Set video quality based on the provided quality object
+          const bitrate = ${quality.bitrate};
+          const resolution = ${quality.width} + 'x' + ${quality.height};
+          
+          // YouTube uses a custom API for quality control
+          if (window.ytplayer && window.ytplayer.config) {
+            window.ytplayer.config.args.quality = resolution;
+            window.ytplayer.config.args.bitrate = bitrate;
+          }
+        })();
+      `);
+      
+      console.log('Video quality set to:', quality);
+    } catch (error) {
+      console.error('Failed to set video quality:', error);
+      throw error;
+    }
   }
 
   async enterFullscreen(): Promise<void> {
-    if (!this.initialized) {
+    if (!this.isInitialized) {
       throw new Error('YouTube service not initialized');
     }
 
-    console.log('Entering YouTube fullscreen');
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    console.log('Entering fullscreen mode');
   }
 
   async exitFullscreen(): Promise<void> {
-    if (!this.initialized) {
+    if (!this.isInitialized) {
       throw new Error('YouTube service not initialized');
     }
 
-    console.log('Exiting YouTube fullscreen');
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    console.log('Exiting fullscreen mode');
   }
 
   async isFullscreen(): Promise<boolean> {
-    if (!this.initialized) {
+    if (!this.isInitialized) {
       throw new Error('YouTube service not initialized');
     }
 
-    return false;
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    return this.mainWindow.isFullScreen();
+  }
+
+  async getContentWarnings(): Promise<ContentWarning[]> {
+    if (!this.isInitialized) {
+      throw new Error('YouTube service not initialized');
+    }
+
+    if (!this.mainWindow) {
+      throw new Error('Main window not available');
+    }
+
+    try {
+      // Capture current frame
+      const frame = await this.mainWindow.webContents.executeJavaScript(`
+        (() => {
+          const video = document.querySelector('video');
+          if (!video) return null;
+          
+          const canvas = document.createElement('canvas');
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(video, 0, 0);
+          return {
+            data: ctx.getImageData(0, 0, canvas.width, canvas.height).data,
+            width: canvas.width,
+            height: canvas.height,
+            timestamp: Date.now()
+          };
+        })();
+      `);
+
+      if (frame) {
+        // In a real implementation, this would use the AI processor
+        // For now, return mock warnings
+        return [
+          {
+            type: 'content_warning',
+            confidence: 0.85,
+            description: 'Content that may require viewer discretion'
+          }
+        ];
+      }
+      return [];
+    } catch (error) {
+      console.error('Failed to get content warnings:', error);
+      return [];
+    }
+  }
+
+  async cleanup(): Promise<void> {
+    console.log('Cleaning up YouTube service...');
+    this.isInitialized = false;
+    this.currentVideo = null;
+    console.log('YouTube service cleanup completed');
   }
 } 

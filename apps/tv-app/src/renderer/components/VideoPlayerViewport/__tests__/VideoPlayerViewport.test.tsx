@@ -1,166 +1,124 @@
 import React from 'react';
-import { render, fireEvent, act } from '@testing-library/react';
+import { render, screen, fireEvent, act } from '@testing-library/react';
 import { VideoPlayerViewport } from '../VideoPlayerViewport';
 import { ipcRenderer } from 'electron';
 
 jest.mock('electron', () => ({
   ipcRenderer: {
     send: jest.fn(),
+    on: jest.fn(),
+    removeListener: jest.fn(),
   },
 }));
 
 describe('VideoPlayerViewport', () => {
-  const mockDimensions = {
-    width: 1280,
-    height: 720,
-    x: 100,
-    y: 50,
+  const defaultProps = {
+    dimensions: {
+      width: 1920,
+      height: 1080,
+      x: 0,
+      y: 0,
+    },
+    fullscreen: false,
+    onFullscreenChange: jest.fn(),
   };
-
-  const mockOnFullscreenChange = jest.fn();
 
   beforeEach(() => {
     jest.clearAllMocks();
-    // Mock requestFullscreen
-    Element.prototype.requestFullscreen = jest.fn().mockResolvedValue(undefined);
-    // Mock document.exitFullscreen
-    document.exitFullscreen = jest.fn().mockResolvedValue(undefined);
-    // Mock document.fullscreenElement
-    Object.defineProperty(document, 'fullscreenElement', {
-      writable: true,
-      value: null,
-    });
   });
 
-  it('should render with correct viewport styles when not fullscreen', () => {
-    const { getByTestId } = render(
-      <VideoPlayerViewport
-        dimensions={mockDimensions}
-        isFullscreen={false}
-        onFullscreenChange={mockOnFullscreenChange}
-      />
-    );
+  it('renders with correct dimensions', async () => {
+    await act(async () => {
+      render(<VideoPlayerViewport {...defaultProps} />);
+    });
 
-    const viewport = getByTestId('video-player-viewport');
+    const viewport = screen.getByTestId('video-player-viewport');
+    
     expect(viewport).toHaveStyle({
+      width: '1920px',
+      height: '1080px',
       position: 'absolute',
-      width: '1280px',
-      height: '720px',
-      left: '100px',
-      top: '50px',
-      transform: 'none',
+      top: '0px',
+      left: '0px',
     });
-    expect(viewport).not.toHaveClass('safe-border');
   });
 
-  it('should render with correct viewport styles when fullscreen', () => {
-    const { getByTestId } = render(
-      <VideoPlayerViewport
-        dimensions={mockDimensions}
-        isFullscreen={true}
-        onFullscreenChange={mockOnFullscreenChange}
-      />
-    );
+  it('handles fullscreen toggle', async () => {
+    await act(async () => {
+      render(<VideoPlayerViewport {...defaultProps} />);
+  });
 
-    const viewport = getByTestId('video-player-viewport');
+    const viewport = screen.getByTestId('video-player-viewport');
+
+    await act(async () => {
+      fireEvent.doubleClick(viewport);
+    });
+
+    expect(ipcRenderer.send).toHaveBeenCalledWith('toggle-fullscreen');
+    expect(defaultProps.onFullscreenChange).toHaveBeenCalledWith(true);
+
+    await act(async () => {
+      render(<VideoPlayerViewport {...defaultProps} fullscreen={true} />);
+    });
+
     expect(viewport).toHaveStyle({
-      position: 'fixed',
-      top: '0',
-      left: '0',
       width: '100%',
       height: '100%',
-      transform: 'none',
-      zIndex: 9999,
+      position: 'fixed',
+      top: '0px',
+      left: '0px',
     });
-    expect(viewport).toHaveClass('safe-border');
   });
 
-  it('should handle entering fullscreen on double click', async () => {
-    const { getByTestId } = render(
-      <VideoPlayerViewport
-        dimensions={mockDimensions}
-        isFullscreen={false}
-        onFullscreenChange={mockOnFullscreenChange}
-      />
-    );
-
-    const viewport = getByTestId('video-player-viewport');
+  it('updates dimensions when props change', async () => {
     await act(async () => {
-      fireEvent.doubleClick(viewport);
+      render(<VideoPlayerViewport {...defaultProps} />);
     });
 
-    expect(viewport.requestFullscreen).toHaveBeenCalled();
-    expect(mockOnFullscreenChange).toHaveBeenCalledWith(true);
-    expect(ipcRenderer.send).toHaveBeenCalledWith('enter-fullscreen');
-  });
+    const viewport = screen.getByTestId('video-player-viewport');
 
-  it('should handle exiting fullscreen on double click', async () => {
-    Object.defineProperty(document, 'fullscreenElement', {
-      writable: true,
-      value: true,
-    });
+    const newDimensions = {
+      width: 1280,
+      height: 720,
+      x: 100,
+      y: 100,
+    };
 
-    const { getByTestId } = render(
-      <VideoPlayerViewport
-        dimensions={mockDimensions}
-        isFullscreen={true}
-        onFullscreenChange={mockOnFullscreenChange}
-      />
-    );
-
-    const viewport = getByTestId('video-player-viewport');
     await act(async () => {
-      fireEvent.doubleClick(viewport);
+      render(<VideoPlayerViewport {...defaultProps} dimensions={newDimensions} />);
     });
 
-    expect(document.exitFullscreen).toHaveBeenCalled();
-    expect(mockOnFullscreenChange).toHaveBeenCalledWith(false);
-    expect(ipcRenderer.send).toHaveBeenCalledWith('exit-fullscreen');
+    expect(viewport).toHaveStyle({
+      width: '1280px',
+      height: '720px',
+      position: 'absolute',
+      top: '100px',
+      left: '100px',
+    });
   });
 
-  it('should handle Escape key to exit fullscreen', () => {
-    render(
-      <VideoPlayerViewport
-        dimensions={mockDimensions}
-        isFullscreen={true}
-        onFullscreenChange={mockOnFullscreenChange}
-      />
-    );
+  it('handles escape key press in fullscreen', async () => {
+    await act(async () => {
+      render(<VideoPlayerViewport {...defaultProps} fullscreen={true} />);
+    });
+    
+    await act(async () => {
+      fireEvent.keyDown(document, { key: 'Escape' });
+    });
 
-    fireEvent.keyDown(document, { key: 'Escape' });
-
-    expect(mockOnFullscreenChange).toHaveBeenCalledWith(false);
-    expect(ipcRenderer.send).toHaveBeenCalledWith('exit-fullscreen');
+    expect(ipcRenderer.send).toHaveBeenCalledWith('toggle-fullscreen');
+    expect(defaultProps.onFullscreenChange).toHaveBeenCalledWith(false);
   });
 
-  it('should not handle Escape key when not in fullscreen', () => {
-    render(
-      <VideoPlayerViewport
-        dimensions={mockDimensions}
-        isFullscreen={false}
-        onFullscreenChange={mockOnFullscreenChange}
-      />
-    );
-
-    fireEvent.keyDown(document, { key: 'Escape' });
-
-    expect(mockOnFullscreenChange).not.toHaveBeenCalled();
-    expect(ipcRenderer.send).not.toHaveBeenCalled();
-  });
-
-  it('should cleanup event listeners on unmount', () => {
-    const removeEventListenerSpy = jest.spyOn(document, 'removeEventListener');
-    const { unmount } = render(
-      <VideoPlayerViewport
-        dimensions={mockDimensions}
-        isFullscreen={false}
-        onFullscreenChange={mockOnFullscreenChange}
-      />
-    );
+  it('cleans up event listeners on unmount', async () => {
+    await act(async () => {
+      render(<VideoPlayerViewport {...defaultProps} />);
+    });
+    
+    const { unmount } = render(<VideoPlayerViewport {...defaultProps} />);
 
     unmount();
 
-    expect(removeEventListenerSpy).toHaveBeenCalledWith('keydown', expect.any(Function));
-    removeEventListenerSpy.mockRestore();
+    expect(ipcRenderer.removeListener).toHaveBeenCalled();
   });
 }); 

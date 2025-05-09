@@ -22,6 +22,10 @@ export class StreamingManager {
     console.log(`Registered streaming service: ${service.name}`);
   }
 
+  public getService(serviceName: string): StreamingService | undefined {
+    return this.services.get(serviceName);
+  }
+
   async initializeService(serviceName: string): Promise<void> {
     try {
       console.log(`Initializing streaming service: ${serviceName}`);

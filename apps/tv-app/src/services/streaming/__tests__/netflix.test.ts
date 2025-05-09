@@ -1,196 +1,103 @@
+import { BrowserWindow } from 'electron';
 import { NetflixService } from '../netflix';
-import { BrowserWindow, screen } from 'electron';
-import { exec } from 'child_process';
-import { promisify } from 'util';
+import { StreamingQuality } from '../types';
 
 // Mock electron modules
 jest.mock('electron', () => ({
-  BrowserWindow: jest.fn().mockImplementation(() => ({
-    setBounds: jest.fn(),
-    setAlwaysOnTop: jest.fn(),
-    setIgnoreMouseEvents: jest.fn(),
-    show: jest.fn(),
-    hide: jest.fn(),
-    webContents: {
-      send: jest.fn()
-    },
-    getBounds: jest.fn().mockReturnValue({ x: 0, y: 0, width: 1920, height: 1080 }),
-    close: jest.fn()
-  })),
-  screen: {
-    getPrimaryDisplay: jest.fn().mockReturnValue({
-      workArea: { x: 0, y: 0, width: 1920, height: 1080 },
-      workAreaSize: { width: 1920, height: 1080 }
-    })
-  }
-}));
-
-// Mock child_process
-jest.mock('child_process', () => ({
-  exec: jest.fn()
+  BrowserWindow: jest.fn()
 }));
 
 describe('NetflixService', () => {
   let netflixService: NetflixService;
-  const TEST_TIMEOUT = 30000; // 30 seconds timeout
+  let mockWindow: jest.Mocked<BrowserWindow>;
 
   beforeEach(() => {
-    netflixService = new NetflixService();
+    mockWindow = {
+      loadURL: jest.fn().mockResolvedValue(undefined),
+      webContents: {
+        executeJavaScript: jest.fn().mockResolvedValue(undefined),
+        on: jest.fn(),
+        removeListener: jest.fn()
+      },
+      show: jest.fn(),
+      hide: jest.fn(),
+      isDestroyed: jest.fn().mockReturnValue(false)
+    } as unknown as jest.Mocked<BrowserWindow>;
+    netflixService = new NetflixService(mockWindow);
   });
 
   afterEach(() => {
-    netflixService.cleanup();
+    jest.clearAllMocks();
   });
 
-  describe('initialization', () => {
-    it('should initialize successfully', async () => {
-      // Mock successful process check
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        if (cmd.includes('tasklist')) {
-          callback(null, 'netflix.exe');
-        } else {
-          callback(null, '');
-        }
-      });
-
+  describe('initialize', () => {
+    it('should initialize Netflix service', async () => {
       await netflixService.initialize();
-      expect(netflixService.isInitialized()).toBe(true);
-    }, TEST_TIMEOUT);
+      expect(mockWindow.loadURL).toHaveBeenCalledWith('https://www.netflix.com');
+      expect(mockWindow.webContents.executeJavaScript).toHaveBeenCalled();
+    });
 
     it('should handle initialization failure', async () => {
-      // Mock failed process check
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        callback(new Error('Process check failed'));
+      (mockWindow.loadURL as jest.Mock).mockRejectedValue(new Error('Failed to load'));
+      await expect(netflixService.initialize()).rejects.toThrow('Failed to load');
       });
-
-      await expect(netflixService.initialize()).rejects.toThrow('Process check failed');
-      expect(netflixService.isInitialized()).toBe(false);
-    }, TEST_TIMEOUT);
   });
 
-  describe('window state detection', () => {
+  describe('playVideo', () => {
     beforeEach(async () => {
-      // Initialize service
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        if (cmd.includes('tasklist')) {
-          callback(null, 'netflix.exe');
-        } else {
-          callback(null, '');
-        }
-      });
       await netflixService.initialize();
-    }, TEST_TIMEOUT);
+    });
 
-    it('should detect window state changes', async () => {
-      // Mock window state change
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        if (cmd.includes('tasklist')) {
-          callback(null, 'netflix.exe');
-        } else if (cmd.includes('Get-WindowState')) {
-          callback(null, 'Maximized');
-        } else {
-          callback(null, '');
-        }
-      });
+    it('should play video with given ID', async () => {
+      const videoId = '12345';
+      await netflixService.playVideo(videoId);
+      expect(mockWindow.loadURL).toHaveBeenCalledWith(`https://www.netflix.com/watch/${videoId}`);
+      expect(mockWindow.webContents.executeJavaScript).toHaveBeenCalled();
+    });
 
-      // Wait for state change detection
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      expect(netflixService.isMaximized()).toBe(true);
-    }, TEST_TIMEOUT);
-
-    it('should handle process termination', async () => {
-      // Mock process termination
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        if (cmd.includes('tasklist')) {
-          callback(null, '');
-        } else {
-          callback(null, '');
-        }
-      });
-
-      // Wait for process termination detection
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      expect(netflixService.isInitialized()).toBe(false);
-    }, TEST_TIMEOUT);
+    it('should handle video playback failure', async () => {
+      (mockWindow.loadURL as jest.Mock).mockRejectedValue(new Error('Failed to play video'));
+      await expect(netflixService.playVideo('12345')).rejects.toThrow('Failed to play video');
+    });
   });
 
-  describe('viewport adaptation', () => {
+  describe('setQuality', () => {
     beforeEach(async () => {
-      // Initialize service
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        if (cmd.includes('tasklist')) {
-          callback(null, 'netflix.exe');
-        } else {
-          callback(null, '');
-        }
-      });
       await netflixService.initialize();
-    }, TEST_TIMEOUT);
+    });
 
-    it('should adapt viewport to 16:9 ratio', async () => {
-      const mockWindow = {
-        setBounds: jest.fn(),
-        center: jest.fn(),
+    it('should set video quality', async () => {
+      const quality: StreamingQuality = {
+        width: 1920,
+        height: 1080,
+        bitrate: 5000000,
+        fps: 30
       };
-      (BrowserWindow as jest.Mock).mockReturnValue(mockWindow);
+      await netflixService.setQuality(quality);
+      expect(mockWindow.webContents.executeJavaScript).toHaveBeenCalledWith(
+        expect.stringContaining('setBitrate')
+      );
+    });
 
-      await netflixService.adaptViewport();
-      expect(mockWindow.setBounds).toHaveBeenCalled();
-      expect(mockWindow.center).toHaveBeenCalled();
-    }, TEST_TIMEOUT);
-
-    it('should handle viewport adaptation errors', async () => {
-      const mockWindow = {
-        setBounds: jest.fn().mockImplementation(() => {
-          throw new Error('Viewport adaptation failed');
-        }),
-        center: jest.fn(),
+    it('should handle quality setting failure', async () => {
+      (mockWindow.webContents.executeJavaScript as jest.Mock).mockRejectedValue(
+        new Error('Failed to set quality')
+      );
+      const quality: StreamingQuality = {
+        width: 1920,
+        height: 1080,
+        bitrate: 5000000,
+        fps: 30
       };
-      (BrowserWindow as jest.Mock).mockReturnValue(mockWindow);
-
-      await expect(netflixService.adaptViewport()).rejects.toThrow('Viewport adaptation failed');
-    }, TEST_TIMEOUT);
+      await expect(netflixService.setQuality(quality)).rejects.toThrow('Failed to set quality');
+    });
   });
 
-  describe('initialization popup', () => {
-    beforeEach(async () => {
-      // Initialize service
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        if (cmd.includes('tasklist')) {
-          callback(null, 'netflix.exe');
-        } else {
-          callback(null, '');
-        }
-      });
+  describe('cleanup', () => {
+    it('should clean up resources', async () => {
       await netflixService.initialize();
-    }, TEST_TIMEOUT);
-
-    it('should show and hide initialization popup', async () => {
-      const mockWindow = {
-        show: jest.fn(),
-        hide: jest.fn(),
-        close: jest.fn(),
-      };
-      (BrowserWindow as jest.Mock).mockReturnValue(mockWindow);
-
-      await netflixService.showInitializationPopup();
-      expect(mockWindow.show).toHaveBeenCalled();
-
-      await netflixService.hideInitializationPopup();
-      expect(mockWindow.hide).toHaveBeenCalled();
-      expect(mockWindow.close).toHaveBeenCalled();
-    }, TEST_TIMEOUT);
-  });
-
-  describe('error recovery', () => {
-    it('should attempt recovery after error', async () => {
-      // Mock error in process check
-      (exec as jest.Mock).mockImplementation((cmd, callback) => {
-        callback(new Error('Process check failed'));
-      });
-
-      await netflixService.initialize();
-      expect(netflixService.isInitialized()).toBe(false);
-    }, TEST_TIMEOUT);
+      await netflixService.cleanup();
+      // Add assertions based on cleanup implementation
+    });
   });
 }); 

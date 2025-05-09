@@ -1,37 +1,81 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NetflixService = void 0;
 const electron_1 = require("electron");
-const child_process_1 = require("child_process");
-const util_1 = require("util");
-const path_1 = __importDefault(require("path"));
-const execAsync = (0, util_1.promisify)(child_process_1.exec);
+const process_1 = require("../process");
+const analyzer_1 = require("../content/analyzer");
+const path = __importStar(require("path"));
+const isDev = __importStar(require("electron-is-dev"));
 class NetflixService {
     constructor(mainWindow) {
         this.name = 'netflix';
-        this.initialized = false;
-        this.mainWindow = null;
-        this.netflixProcessId = null;
+        this.isInitialized = false;
+        this.netflixProcess = null;
         this.checkInterval = null;
-        this.isMonitoring = false;
-        this.recoveryAttempts = 0;
-        this.MAX_RECOVERY_ATTEMPTS = 3;
-        this.lastWindowState = {
-            isMaximized: false,
-            isFullscreen: false
-        };
+        this.currentVideo = null;
+        this.isAnalyzing = false;
         this.mainWindow = mainWindow;
+        this.contentAnalyzer = new analyzer_1.ContentAnalyzer();
     }
     async initialize() {
-        if (this.initialized)
+        if (this.isInitialized) {
+            console.log('Netflix service already initialized');
             return;
+        }
         try {
-            // Initialize Netflix detection
-            await this.setupNetflixDetection();
-            this.initialized = true;
+            console.log('Initializing Netflix service...');
+            // Show initialization popup
+            await this.showInitializationPopup();
+            // Initialize content analyzer
+            await this.contentAnalyzer.initialize();
+            // Load Netflix URL
+            await this.mainWindow.loadURL('https://www.netflix.com');
+            // Wait for Netflix to be ready
+            await this.mainWindow.webContents.executeJavaScript(`
+        new Promise((resolve) => {
+          if (document.readyState === 'complete') {
+            resolve();
+          } else {
+            window.addEventListener('load', resolve);
+          }
+        });
+      `);
+            // Start monitoring for Netflix process
+            this.startMonitoring();
+            this.isInitialized = true;
             console.log('Netflix service initialized successfully');
         }
         catch (error) {
@@ -39,315 +83,245 @@ class NetflixService {
             throw error;
         }
     }
-    async setupNetflixDetection() {
-        if (!this.mainWindow) {
-            throw new Error('Main window not available');
+    async showInitializationPopup() {
+        const popup = new electron_1.BrowserWindow({
+            width: 400,
+            height: 200,
+            frame: false,
+            transparent: true,
+            resizable: false,
+            alwaysOnTop: true,
+            webPreferences: {
+                nodeIntegration: false,
+                contextIsolation: true
+            }
+        });
+        // Load initialization HTML with correct path
+        const htmlPath = isDev
+            ? path.join(__dirname, '..', '..', '..', '..', 'tv-app', 'src', 'renderer', 'initialization.html')
+            : path.join(__dirname, '..', '..', '..', 'tv-app', 'dist', 'renderer', 'initialization.html');
+        console.log('Loading initialization HTML from:', htmlPath);
+        await popup.loadFile(htmlPath);
+        // Center popup on primary display
+        const { x, y } = popup.getBounds();
+        popup.setPosition(x + 200, y + 100);
+        // Auto-close after 5 seconds
+        setTimeout(() => {
+            popup.close();
+        }, 5000);
+    }
+    adaptViewport() {
+        const primaryDisplay = electron_1.screen.getPrimaryDisplay();
+        const { width, height } = primaryDisplay.workAreaSize;
+        // Calculate 16:9 dimensions
+        const aspectRatio = 16 / 9;
+        let newWidth = width;
+        let newHeight = width / aspectRatio;
+        // If height is too large, scale down
+        if (newHeight > height) {
+            newHeight = height;
+            newWidth = height * aspectRatio;
         }
-        if (this.isMonitoring) {
-            console.log('Netflix monitoring already active');
-            return;
-        }
-        this.isMonitoring = true;
-        this.recoveryAttempts = 0;
-        // Check for Netflix process
-        const checkNetflixProcess = async () => {
+        // Center the window horizontally
+        const x = Math.round((width - newWidth) / 2);
+        // Position window at the top of the screen
+        const y = 0;
+        // Set window bounds
+        this.mainWindow.setBounds({ x, y, width: newWidth, height: newHeight });
+        // Set window to be always on top and transparent
+        this.mainWindow.setAlwaysOnTop(true, 'screen-saver');
+        this.mainWindow.setIgnoreMouseEvents(true);
+        // Show the window
+        this.mainWindow.show();
+    }
+    startMonitoring() {
+        // Check for Netflix process every second
+        this.checkInterval = setInterval(async () => {
             try {
-                if (process.platform === 'win32') {
-                    // Check for Netflix desktop app with more detailed process info
-                    const { stdout: processList } = await execAsync('tasklist /FI "IMAGENAME eq Netflix.exe" /NH /FO CSV /V');
-                    const netflixRunning = processList.includes('Netflix.exe');
-                    if (netflixRunning) {
-                        console.log('Netflix process detected');
-                        // ALWAYS show main window when Netflix is running
-                        if (this.mainWindow) {
-                            this.mainWindow.show();
-                            this.mainWindow.setAlwaysOnTop(true, 'screen-saver');
-                            console.log('Main window shown and set to always on top');
-                        }
-                        // Get detailed process info including PID and window state
-                        const { stdout: processInfo } = await execAsync('powershell -command "Get-Process Netflix | Select-Object Id,MainWindowTitle,MainWindowHandle,Responding"');
-                        console.log('Process info:', processInfo);
-                        // Check if Netflix window exists and is visible
-                        const hasMainWindow = processInfo.includes('MainWindowHandle') && !processInfo.includes('0');
-                        if (hasMainWindow) {
-                            const pidMatch = processInfo.match(/Id\s+MainWindowTitle\s*\n\s*(\d+)\s+/);
-                            if (pidMatch) {
-                                const currentPid = parseInt(pidMatch[1], 10);
-                                console.log('Netflix PID:', currentPid);
-                                // Get window state using PowerShell with more detailed info
-                                const { stdout: windowState } = await execAsync(`
-                  powershell -command "
-                    $process = Get-Process -Id ${currentPid};
-                    $handle = $process.MainWindowHandle;
-                    if ($handle -ne 0) {
-                      $maximized = $process.MainWindowHandle -ne 0;
-                      $fullscreen = $maximized -and $process.MainWindowTitle -match 'Netflix';
-                      $title = $process.MainWindowTitle;
-                      @{
-                        Maximized = $maximized;
-                        Fullscreen = $fullscreen;
-                        Handle = $handle;
-                        Title = $title;
-                        Responding = $process.Responding
-                      } | ConvertTo-Json
+                const netflixProcess = await (0, process_1.findProcess)('Netflix.exe');
+                if (netflixProcess) {
+                    console.log('Netflix process found');
+                    if (this.mainWindow && !this.mainWindow.isDestroyed()) {
+                        this.adaptViewport();
+                        this.mainWindow.show();
                     }
-                  "
-                `);
-                                if (windowState && windowState.trim()) {
-                                    const state = JSON.parse(windowState.trim());
-                                    console.log('Window state:', state);
-                                    const windowChanged = state.Maximized !== this.lastWindowState.isMaximized ||
-                                        state.Fullscreen !== this.lastWindowState.isFullscreen;
-                                    this.lastWindowState = {
-                                        isMaximized: state.Maximized,
-                                        isFullscreen: state.Fullscreen
-                                    };
-                                    if (this.netflixProcessId !== currentPid || windowChanged) {
-                                        console.log('Netflix window state changed:', this.lastWindowState);
-                                        this.netflixProcessId = currentPid;
-                                        // Show popup and adapt viewport
-                                        if (this.mainWindow) {
-                                            await this.showInitializationPopup();
-                                            await this.adaptViewport();
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        else if (this.netflixProcessId) {
-                            console.log('Netflix window no longer visible');
-                            this.netflixProcessId = null;
-                            // Don't hide the main window, just keep it visible
-                        }
-                    }
-                    else if (this.netflixProcessId) {
-                        console.log('Netflix process no longer running');
-                        this.netflixProcessId = null;
-                        if (this.mainWindow) {
-                            this.mainWindow.hide();
-                        }
+                }
+                else {
+                    console.log('Netflix process not found');
+                    if (this.mainWindow && !this.mainWindow.isDestroyed()) {
+                        this.mainWindow.hide();
                     }
                 }
             }
             catch (error) {
                 console.error('Error checking Netflix process:', error);
-                await this.attemptRecovery();
             }
-        };
-        // Initial check
-        await checkNetflixProcess();
-        // Set up interval for continuous monitoring (check more frequently)
-        this.checkInterval = setInterval(checkNetflixProcess, 500);
-    }
-    async attemptRecovery() {
-        try {
-            // Check if we've exceeded maximum recovery attempts
-            if (this.recoveryAttempts >= this.MAX_RECOVERY_ATTEMPTS) {
-                console.error('Maximum recovery attempts reached. Stopping recovery.');
-                this.cleanup();
-                return;
-            }
-            this.recoveryAttempts++;
-            console.log(`Recovery attempt ${this.recoveryAttempts} of ${this.MAX_RECOVERY_ATTEMPTS}`);
-            // Clear existing interval
-            if (this.checkInterval) {
-                clearInterval(this.checkInterval);
-                this.checkInterval = null;
-            }
-            // Reset state
-            this.isMonitoring = false;
-            this.netflixProcessId = null;
-            // Wait a bit before retrying
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            // Restart monitoring
-            await this.setupNetflixDetection();
-        }
-        catch (error) {
-            console.error('Recovery attempt failed:', error);
-            // If recovery fails, increment attempts and try again
-            this.recoveryAttempts++;
-            if (this.recoveryAttempts < this.MAX_RECOVERY_ATTEMPTS) {
-                await this.attemptRecovery();
-            }
-            else {
-                console.error('Maximum recovery attempts reached. Stopping recovery.');
-                this.cleanup();
-            }
-        }
-    }
-    async showInitializationPopup() {
-        if (!this.mainWindow)
-            return;
-        try {
-            console.log('Creating initialization popup...');
-            const popup = new electron_1.BrowserWindow({
-                width: 400,
-                height: 200,
-                frame: false,
-                transparent: true,
-                resizable: false,
-                alwaysOnTop: true,
-                webPreferences: {
-                    nodeIntegration: false,
-                    contextIsolation: true
-                }
-            });
-            // Load initialization HTML
-            const htmlPath = path_1.default.join(__dirname, '..', 'renderer', 'initialization.html');
-            console.log('Loading initialization HTML from:', htmlPath);
-            await popup.loadFile(htmlPath);
-            // Get primary display work area
-            const primaryDisplay = electron_1.screen.getPrimaryDisplay();
-            const { x, y, width, height } = primaryDisplay.workArea;
-            // Calculate center position
-            const popupX = x + Math.floor((width - 400) / 2);
-            const popupY = y + Math.floor((height - 200) / 2);
-            // Set position with animation
-            popup.setPosition(popupX, popupY);
-            popup.setOpacity(0);
-            popup.show();
-            // Fade in
-            let opacity = 0;
-            const fadeInterval = setInterval(() => {
-                opacity += 0.1;
-                if (opacity >= 1) {
-                    clearInterval(fadeInterval);
-                }
-                popup.setOpacity(opacity);
-            }, 50);
-            // Auto-close after 3 seconds with fade out
-            setTimeout(() => {
-                const fadeOutInterval = setInterval(() => {
-                    opacity -= 0.1;
-                    if (opacity <= 0) {
-                        clearInterval(fadeOutInterval);
-                        popup.close();
-                    }
-                    popup.setOpacity(opacity);
-                }, 50);
-            }, 3000);
-        }
-        catch (error) {
-            console.error('Error showing initialization popup:', error);
-        }
-    }
-    async adaptViewport() {
-        if (!this.mainWindow)
-            return;
-        try {
-            console.log('Adapting viewport for Netflix...');
-            // Get the primary display
-            const primaryDisplay = electron_1.screen.getPrimaryDisplay();
-            const { width: screenWidth, height: screenHeight } = primaryDisplay.workAreaSize;
-            // Calculate 16:9 dimensions
-            let viewportWidth = screenWidth;
-            let viewportHeight = screenWidth * (9 / 16);
-            // If height is too large, scale based on height instead
-            if (viewportHeight > screenHeight) {
-                viewportHeight = screenHeight;
-                viewportWidth = screenHeight * (16 / 9);
-            }
-            // Center the viewport
-            const x = Math.max(0, (screenWidth - viewportWidth) / 2);
-            const y = Math.max(0, (screenHeight - viewportHeight) / 2);
-            console.log('Setting viewport dimensions:', {
-                width: viewportWidth,
-                height: viewportHeight,
-                x,
-                y
-            });
-            // Set the window bounds
-            this.mainWindow.setBounds({
-                x: Math.round(x),
-                y: Math.round(y),
-                width: Math.round(viewportWidth),
-                height: Math.round(viewportHeight)
-            });
-            // Ensure window is visible and on top
-            this.mainWindow.show();
-            this.mainWindow.setAlwaysOnTop(true, 'screen-saver');
-            // Send viewport update to renderer
-            this.mainWindow.webContents.send('viewport-update', {
-                width: viewportWidth,
-                height: viewportHeight,
-                x,
-                y,
-                aspectRatio: 16 / 9
-            });
-            console.log('Viewport adaptation complete');
-        }
-        catch (error) {
-            console.error('Error adapting viewport:', error);
-        }
+        }, 1000);
     }
     async cleanup() {
-        this.isMonitoring = false;
+        console.log('Cleaning up Netflix service...');
         if (this.checkInterval) {
             clearInterval(this.checkInterval);
             this.checkInterval = null;
         }
-        this.netflixProcessId = null;
-        this.initialized = false;
+        if (this.isAnalyzing) {
+            await this.contentAnalyzer.stopAnalysis();
+        }
+        this.isInitialized = false;
+        this.netflixProcess = null;
+        console.log('Netflix service cleanup completed');
     }
     async playVideo(videoId) {
-        if (!this.initialized) {
+        if (!this.isInitialized) {
             throw new Error('Netflix service not initialized');
         }
-        // Play video using Netflix API
-        // This would use Netflix's official API or a compatible library
-        console.log(`Playing Netflix video: ${videoId}`);
+        try {
+            // Start content analysis
+            await this.contentAnalyzer.startAnalysis();
+            this.isAnalyzing = true;
+            // Navigate to the video URL
+            await this.mainWindow.loadURL(`https://www.netflix.com/watch/${videoId}`);
+            // Wait for video to be ready
+            await this.mainWindow.webContents.executeJavaScript(`
+        new Promise((resolve) => {
+          const video = document.querySelector('video');
+          if (video && video.readyState >= 2) {
+            resolve();
+          } else {
+            const checkVideo = setInterval(() => {
+              const video = document.querySelector('video');
+              if (video && video.readyState >= 2) {
+                clearInterval(checkVideo);
+                resolve();
+              }
+            }, 100);
+          }
+        });
+      `);
+            this.currentVideo = {
+                id: videoId,
+                isPlaying: true
+            };
+            console.log('Video playback started:', videoId);
+        }
+        catch (error) {
+            console.error('Failed to play video:', error);
+            throw error;
+        }
     }
     async getCurrentVideo() {
-        if (!this.initialized) {
+        if (!this.isInitialized) {
             throw new Error('Netflix service not initialized');
         }
-        // Get current video info from Netflix API
-        // This would use Netflix's official API or a compatible library
-        // For now, return mock data
-        return {
-            title: 'Sample Netflix Title',
-            platform: 'netflix',
-            quality: {
-                width: 1920,
-                height: 1080,
-                fps: 60,
-                bitrate: 15000000 // 15 Mbps
-            },
-            resolution: '1920x1080',
-            aspectRatio: '16:9'
-        };
+        try {
+            const videoInfo = await this.mainWindow.webContents.executeJavaScript(`
+        (() => {
+          const video = document.querySelector('video');
+          if (!video) return null;
+          
+    return {
+            title: document.title,
+      platform: 'netflix',
+      quality: {
+              width: video.videoWidth,
+              height: video.videoHeight,
+              fps: video.getVideoPlaybackQuality().totalVideoFrames / video.currentTime,
+              bitrate: video.getVideoPlaybackQuality().totalVideoFrames * video.videoWidth * video.videoHeight * 3
+      },
+            resolution: video.videoWidth + 'x' + video.videoHeight,
+            aspectRatio: video.videoWidth / video.videoHeight + ':1',
+            isPlaying: !video.paused,
+            currentTime: video.currentTime,
+            duration: video.duration
+          };
+        })();
+      `);
+            return videoInfo || this.currentVideo;
+        }
+        catch (error) {
+            console.error('Failed to get current video info:', error);
+            return this.currentVideo;
+        }
     }
     async setQuality(quality) {
-        if (!this.initialized) {
+        if (!this.isInitialized) {
             throw new Error('Netflix service not initialized');
         }
-        // Set video quality using Netflix API
-        // This would use Netflix's official API or a compatible library
-        console.log('Setting Netflix quality:', quality);
+        try {
+            await this.mainWindow.webContents.executeJavaScript(`
+        (() => {
+          const video = document.querySelector('video');
+          if (!video) return;
+          
+          // Set video quality based on the provided quality object
+          const bitrate = ${quality.bitrate};
+          const resolution = ${quality.width} + 'x' + ${quality.height};
+          
+          // Netflix uses a custom API for quality control
+          if (window.netflix && window.netflix.appQuality) {
+            window.netflix.appQuality.setBitrate(bitrate);
+            window.netflix.appQuality.setResolution(resolution);
+          }
+        })();
+      `);
+            console.log('Video quality set to:', quality);
+        }
+        catch (error) {
+            console.error('Failed to set video quality:', error);
+            throw error;
+        }
+    }
+    async getContentWarnings() {
+        if (!this.isAnalyzing) {
+            return [];
+        }
+        try {
+            // Capture current frame
+            const frame = await this.mainWindow.webContents.executeJavaScript(`
+        (() => {
+          const video = document.querySelector('video');
+          if (!video) return null;
+          
+          const canvas = document.createElement('canvas');
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(video, 0, 0);
+          return {
+            data: ctx.getImageData(0, 0, canvas.width, canvas.height).data,
+            width: canvas.width,
+            height: canvas.height,
+            timestamp: Date.now()
+          };
+        })();
+      `);
+            if (frame) {
+                return await this.contentAnalyzer.analyzeFrame(frame);
+            }
+            return [];
+        }
+        catch (error) {
+            console.error('Failed to get content warnings:', error);
+            return [];
+        }
     }
     async enterFullscreen() {
-        if (!this.initialized) {
+        if (!this.isInitialized) {
             throw new Error('Netflix service not initialized');
         }
-        // Enter fullscreen using Netflix API
-        // This would use Netflix's official API or a compatible library
-        console.log('Entering Netflix fullscreen');
+        console.log('Entering fullscreen mode');
     }
     async exitFullscreen() {
-        if (!this.initialized) {
+        if (!this.isInitialized) {
             throw new Error('Netflix service not initialized');
         }
-        // Exit fullscreen using Netflix API
-        // This would use Netflix's official API or a compatible library
-        console.log('Exiting Netflix fullscreen');
+        console.log('Exiting fullscreen mode');
     }
     async isFullscreen() {
-        if (!this.initialized) {
+        if (!this.isInitialized) {
             throw new Error('Netflix service not initialized');
         }
-        // Check fullscreen state using Netflix API
-        // This would use Netflix's official API or a compatible library
-        return false;
+        return this.mainWindow.isFullScreen();
     }
 }
 exports.NetflixService = NetflixService;

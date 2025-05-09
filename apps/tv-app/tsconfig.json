@@ -12,8 +12,11 @@
     "jsx": "react-jsx",
     "paths": {
       "@/*": ["./src/*"],
-      "@safeview/shared/*": ["../../libs/shared/src/*"]
+      "@safeview/shared/*": ["../../libs/shared/src/*"],
+      "@safeview/backend/*": ["../../apps/backend/src/*"],
+      "@safeview/tv-app/*": ["apps/tv-app/src/*"]
     }
   },
-  "include": ["src/**/*", "../../libs/shared/src/**/*"]
+  "include": ["src/**/*", "../../libs/shared/src/**/*"],
+  
 } 
